@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Singapore Historical GIS with Google Maps</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+
+        #gmap {
+            height: 100%;
+        }
+
+        html,body,.container {
+            height:100%;
+        }
+
+        .container {
+            display:table;
+            width: 100%;
+            margin-top: -50px;
+            padding: 50px 0 0 0; /*set left/right padding according to needs*/
+            box-sizing: border-box;
+        }
+
+        .row {
+            height: 100%;
+        }
+
+        .col-left {
+            width: 200px;
+        }
+
+    </style>
+
+</head>
+
+
+<body style="height:100%">
+
+<header>Welcome to Singapore Historical GIS</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3">Navigation</div>
+        <div class="col-xs-9" id="gmap"></div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMUr0rGiTA8yFVI2ZcOvmtlKbfR7bOiwU&callback=initMap"></script>
+</body>
+
+
+</html>
